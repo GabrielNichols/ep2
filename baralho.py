@@ -6,3 +6,7 @@ def cria_baralho():
         for valor in valores:
             baralho.append(valor+naipe)
     return baralho
+
+def extrai_naipe(carta):
+
+    return carta[len(carta)-1]
