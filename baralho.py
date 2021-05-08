@@ -10,3 +10,13 @@ def cria_baralho():
 def extrai_naipe(carta):
 
     return carta[len(carta)-1]
+
+def extrai_valor(carta):
+
+    if carta[1] == '0':
+
+        return '10'
+
+    else:
+
+        return carta[0]
