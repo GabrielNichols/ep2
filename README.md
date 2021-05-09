@@ -5,7 +5,7 @@ Tarefas:
 Criar baralho (feito)
 Extrair naipe (feito)
 Extrair valor (feito)
-Listar movimentos
+Listar movimentos (feito)
 Empilhar carta
 Movimentos possiveis
 Finalizar jogo
