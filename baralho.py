@@ -37,3 +37,10 @@ def empilha(baralho,origem,destino):
     baralho[destino] = baralho[origem]
     del baralho[origem]
     return baralho
+
+def possui_movimentos_possiveis(baralho):
+    for i in range(0,len(baralho)-1):
+        movimentos = lista_movimentos_possiveis(baralho, i)
+        if len(movimentos) > 0:
+            return True
+    return False
