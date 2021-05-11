@@ -6,6 +6,6 @@ Criar baralho (feito)
 Extrair naipe (feito)
 Extrair valor (feito)
 Listar movimentos (feito)
-Empilhar carta
-Movimentos possiveis
-Finalizar jogo
+Empilhar carta (feito)
+Movimentos possiveis (feito)
+Finalizar jogo (feito)
