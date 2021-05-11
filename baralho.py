@@ -54,6 +54,11 @@ Paciência Acordeão - implementação do jogo
 
 Autor: Eric Possato e Gabriel Nichols
 '''
+
+movimentos_legais = []
+for i in range(1,53):
+    movimentos_legais.append(str(i))
+
 baralho = cria_baralho()
 
 random.shuffle(baralho)
