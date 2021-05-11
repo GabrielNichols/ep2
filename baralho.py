@@ -1,4 +1,8 @@
 import random
+
+'''
+Funções para criação do jogo
+'''
 def cria_baralho():
     naipes = ['♠','♥','♦','♣']
     valores = ['A','2','3','4','5','6','7','8','9','10','J','Q','K']
@@ -45,7 +49,11 @@ def possui_movimentos_possiveis(baralho):
         if len(movimentos) > 0:
             return True
     return False
+'''
+Paciência Acordeão - implementação do jogo
 
+Autor: Eric Possato e Gabriel Nichols
+'''
 baralho = cria_baralho()
 
 random.shuffle(baralho)
