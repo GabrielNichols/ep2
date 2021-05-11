@@ -58,7 +58,7 @@ baralho = cria_baralho()
 
 random.shuffle(baralho)
 
-#while possui_movimentos_possiveis(baralho): #repete até não haver movimentos possíveis
+while possui_movimentos_possiveis(baralho): #repete até não haver movimentos possíveis
  
     print('O estado atual do baralho é:')
     for count, carta in enumerate(baralho, start= 1): #imprime baralho cada rodada
@@ -89,6 +89,19 @@ random.shuffle(baralho)
         (f'Sobre qual carta você quer empilhar o {jogada}?')
         print('1.',pri_anterior)
         print('2.',ter_anterior)
+        
+        escolha = 0
+        
+        while escolha != 1 and escolha != 2:
+            escolha = int(input('Faça sua escolha (1-2): '))
+            if escolha == 1:
+                destino = jogada - 1
+                baralho = empilha(baralho, jogada, destino)
+            elif escolha == 2:
+                destino = jogada - 3
+                baralho = empilha(baralho,jogada,destino)
+            else:
+                print('Escolha inválida')
 
 if len(baralho) == 1:
     print('Todas as cartas foram empilhadas\n----------Você venceu!----------')
