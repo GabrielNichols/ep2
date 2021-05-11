@@ -57,3 +57,9 @@ Autor: Eric Possato e Gabriel Nichols
 baralho = cria_baralho()
 
 random.shuffle(baralho)
+
+#while possui_movimentos_possiveis(baralho): #repete até não haver movimentos possíveis
+ 
+    print('O estado atual do baralho é:')
+    for count, carta in enumerate(baralho, start= 1): #imprime baralho cada rodada
+        print(str(count) + '.',carta)
