@@ -63,3 +63,8 @@ random.shuffle(baralho)
     print('O estado atual do baralho é:')
     for count, carta in enumerate(baralho, start= 1): #imprime baralho cada rodada
         print(str(count) + '.',carta)
+
+if len(baralho) == 1:
+    print('Todas as cartas foram empilhadas\n----------Você venceu!----------')
+else:
+    print('Não existem mais movimentos possíveis\n----------GAME OVER----------')
