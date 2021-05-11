@@ -64,7 +64,7 @@ random.shuffle(baralho)
     for count, carta in enumerate(baralho, start= 1): #imprime baralho cada rodada
         print(str(count) + '.',carta)
 
-    #testa movimento possível
+    #pede uma carta e testa se é um valor possível
     mov_possivel = []
 
     while mov_possivel == []:
@@ -78,6 +78,17 @@ random.shuffle(baralho)
                 print(f'A carta {baralho[jogada]} não pode ser movida')
         else:
             print(f'Posição inválida, digite um número entre 1 e {len(baralho)}')
+
+    #empilha a carta no local adequado
+    if mov_possivel == [1] or mov_possivel == [3]:
+        destino = jogada - mov_possivel[0]
+        baralho = empilha(baralho, jogada, destino)
+    elif mov_possivel == [1,3]:
+        pri_anterior = baralho[jogada-1]
+        ter_anterior = baralho[jogada-3]
+        (f'Sobre qual carta você quer empilhar o {jogada}?')
+        print('1.',pri_anterior)
+        print('2.',ter_anterior)
 
 if len(baralho) == 1:
     print('Todas as cartas foram empilhadas\n----------Você venceu!----------')
