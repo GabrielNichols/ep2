@@ -1,3 +1,4 @@
+import random
 def cria_baralho():
     naipes = ['♠','♥','♦','♣']
     valores = ['A','2','3','4','5','6','7','8','9','10','J','Q','K']
@@ -39,8 +40,12 @@ def empilha(baralho,origem,destino):
     return baralho
 
 def possui_movimentos_possiveis(baralho):
-    for i in range(0,len(baralho)-1):
+    for i in range(0,len(baralho)):
         movimentos = lista_movimentos_possiveis(baralho, i)
         if len(movimentos) > 0:
             return True
     return False
+
+baralho = cria_baralho()
+
+random.shuffle(baralho)
